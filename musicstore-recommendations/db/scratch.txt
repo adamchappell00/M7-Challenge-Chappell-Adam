@@ -1,0 +1,4 @@
+docker container run -d -p 3306:3306 \
+--env MYSQL_ROOT_PASSWORD=password \
+--volume=/Users/ac/IdeaProjects/M7-Challenge-Chappell-Adam/musicstore-recommendations/db/data:/var/lib/mysql \
+--network=musicstorerecommendationnetwork --name=music-store-recommendations-db music-store-recommendations-db

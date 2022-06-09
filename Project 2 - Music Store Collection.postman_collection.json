@@ -1,0 +1,818 @@
+{
+	"info": {
+		"_postman_id": "5ed54488-7358-4fd8-8d2c-8b125aa0c1da",
+		"name": "Project 2 - Music Store Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20786873"
+	},
+	"item": [
+		{
+			"name": "Catalog",
+			"item": [
+				{
+					"name": "Get All Tracks",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Get  One Track by Id",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Albums",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Get One Album by Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://immense-mesa-40644.herokuapp.com/album/1",
+							"protocol": "https",
+							"host": [
+								"immense-mesa-40644",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"album",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Artists",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Get One Artist by Id",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Labels",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Get One Label by Id",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Create Track",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n        \"title\": \"That Taylor Song\",\n        \"runTime\": 123,\n        \"albumId\": 1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/track",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"track"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Album",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n        \"title\": \"That Taylor Song\",\n        \"runTime\": 123,\n        \"albumId\": 1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/track",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"track"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Label",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n        \"title\": \"That Taylor Song\",\n        \"runTime\": 123,\n        \"albumId\": 1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/label",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"label"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Artist",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n        \"title\": \"That Taylor Song\",\n        \"runTime\": 123,\n        \"albumId\": 1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/label",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"label"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit Label",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 3,\n    \"name\": \"FunTimes Records\",\n    \"website\": \"so-fun.com\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://immense-mesa-40644.herokuapp.com/label/3",
+							"protocol": "https",
+							"host": [
+								"immense-mesa-40644",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"label",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit Track",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "https://immense-mesa-40644.herokuapp.com/track/3",
+							"protocol": "https",
+							"host": [
+								"immense-mesa-40644",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"track",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit Artist",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "https://immense-mesa-40644.herokuapp.com/artist/3",
+							"protocol": "https",
+							"host": [
+								"immense-mesa-40644",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"artist",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit Album",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 3,\n    \"title\": \"Boom\",\n    \"releaseDate\": \"2022-02-11\",\n    \"listPrice\": 23.49,\n    \"artistId\": 2,\n    \"labelId\": 2\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://immense-mesa-40644.herokuapp.com/album/3",
+							"protocol": "https",
+							"host": [
+								"immense-mesa-40644",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"album",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Album",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://immense-mesa-40644.herokuapp.com/album/3",
+							"protocol": "https",
+							"host": [
+								"immense-mesa-40644",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"album",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Track",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://immense-mesa-40644.herokuapp.com/track/3",
+							"protocol": "https",
+							"host": [
+								"immense-mesa-40644",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"track",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Label",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://immense-mesa-40644.herokuapp.com/label/3",
+							"protocol": "https",
+							"host": [
+								"immense-mesa-40644",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"label",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Artist",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://immense-mesa-40644.herokuapp.com/artist/3",
+							"protocol": "https",
+							"host": [
+								"immense-mesa-40644",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"artist",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Recommendations",
+			"item": [
+				{
+					"name": "Get All Album Recommend",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Get One Album Recommend by Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://fierce-oasis-08982.herokuapp.com/recommendations/album/1",
+							"protocol": "https",
+							"host": [
+								"fierce-oasis-08982",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"recommendations",
+								"album",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Label Recommend",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://fierce-oasis-08982.herokuapp.com/recommendations/label",
+							"protocol": "https",
+							"host": [
+								"fierce-oasis-08982",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"recommendations",
+								"label"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get One Label Recommend by Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://fierce-oasis-08982.herokuapp.com/recommendations/label/1",
+							"protocol": "https",
+							"host": [
+								"fierce-oasis-08982",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"recommendations",
+								"label",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Artist Recommend",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://fierce-oasis-08982.herokuapp.com/recommendations/artist",
+							"protocol": "https",
+							"host": [
+								"fierce-oasis-08982",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"recommendations",
+								"artist"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get One Artist Recommend by Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://fierce-oasis-08982.herokuapp.com/recommendations/artist/1",
+							"protocol": "https",
+							"host": [
+								"fierce-oasis-08982",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"recommendations",
+								"artist",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Track Recommend",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://fierce-oasis-08982.herokuapp.com/recommendations/artist",
+							"protocol": "https",
+							"host": [
+								"fierce-oasis-08982",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"recommendations",
+								"artist"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get One Track Recommend by Id",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Create Album Rec",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://fierce-oasis-08982.herokuapp.com/recommendations/album",
+							"protocol": "https",
+							"host": [
+								"fierce-oasis-08982",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"recommendations",
+								"album"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Track Rec",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://fierce-oasis-08982.herokuapp.com/recommendations/album",
+							"protocol": "https",
+							"host": [
+								"fierce-oasis-08982",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"recommendations",
+								"album"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Artist Rec",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://fierce-oasis-08982.herokuapp.com/recommendations/artist",
+							"protocol": "https",
+							"host": [
+								"fierce-oasis-08982",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"recommendations",
+								"artist"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Label Rec",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://fierce-oasis-08982.herokuapp.com/recommendations/artist",
+							"protocol": "https",
+							"host": [
+								"fierce-oasis-08982",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"recommendations",
+								"artist"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit Album Rec",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 1,\n    \"trackId\": 13,\n    \"userId\": 4002,\n    \"liked\": true\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://fierce-oasis-08982.herokuapp.com/recommendations/album/1",
+							"protocol": "https",
+							"host": [
+								"fierce-oasis-08982",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"recommendations",
+								"album",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit Label Rec",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 1,\n    \"labelId\": 16,\n    \"userId\": 1337,\n    \"liked\": true\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://fierce-oasis-08982.herokuapp.com/recommendations/label/1",
+							"protocol": "https",
+							"host": [
+								"fierce-oasis-08982",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"recommendations",
+								"label",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit Track Rec",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "https://fierce-oasis-08982.herokuapp.com/recommendations/track/1",
+							"protocol": "https",
+							"host": [
+								"fierce-oasis-08982",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"recommendations",
+								"track",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit Artist Rec",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "https://fierce-oasis-08982.herokuapp.com/recommendations/track/1",
+							"protocol": "https",
+							"host": [
+								"fierce-oasis-08982",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"recommendations",
+								"track",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Artist Rec",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://fierce-oasis-08982.herokuapp.com/recommendations/artist/1",
+							"protocol": "https",
+							"host": [
+								"fierce-oasis-08982",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"recommendations",
+								"artist",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Album Rec",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://fierce-oasis-08982.herokuapp.com/recommendations/album/1",
+							"protocol": "https",
+							"host": [
+								"fierce-oasis-08982",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"recommendations",
+								"album",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Track Rec",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://fierce-oasis-08982.herokuapp.com/recommendations/track/1",
+							"protocol": "https",
+							"host": [
+								"fierce-oasis-08982",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"recommendations",
+								"track",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Label Rec",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://fierce-oasis-08982.herokuapp.com/recommendations/label/1",
+							"protocol": "https",
+							"host": [
+								"fierce-oasis-08982",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"recommendations",
+								"label",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
